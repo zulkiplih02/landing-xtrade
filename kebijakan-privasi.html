@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<!--
+Author: Keenthemes
+Product Name: Metronic - Bootstrap 5 HTML, VueJS, React, Angular & Laravel Admin Dashboard Theme
+Purchase: https://1.envato.market/EA4JP
+Website: http://www.keenthemes.com
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Dribbble: www.dribbble.com/keenthemes
+Like: www.facebook.com/keenthemes
+License: For each use you must have a valid license purchased only from above link in order to legally use the theme for your project.
+-->
+<html lang="en">
+  <!--begin::Head-->
+  <head>
+    <base href="" />
+    <title>XTRADE</title>
+    <meta
+      name="description"
+      content="Selamat datang di perusahaan investasi terbaik yang menawarkan solusi investasi terhebat. Fitur penarikan cepat, pertumbuhan optimal, transparansi maksimal dan fitur keamanan yang terjamin"
+    />
+    <meta
+      name="keywords"
+      content="Auto Trade
+      Dovish FX PT GRAHA BERLIAN ULTIMA menawarkan solusi investasi terbaik yang pernah ada, fitur penarikan cepat,
+      pertumbuhan optimal, transparansi maksimal dan fitur keamanan yang terjamin."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Dovish FX" />
+    <meta property="og:url" content="dovishfx.com" />
+    <meta property="og:site_name" content="GBU" />
+    <link rel="canonical" href="dovishfx.com" />
+    <!-- <link rel="shortcut icon" href="assets/media/logos/favicon.ico" /> -->
+    <!--begin::Fonts-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
+    />
+    <!--end::Fonts-->
+    <!--begin::Global Stylesheets Bundle(used by all pages)-->
+    <link
+      href="assets/plugins/global/landingplugins.bundle.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/landingstyle.bundle.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!--end::Global Stylesheets Bundle-->
+  </head>
+  <!--end::Head-->
+
+  <style>
+    .btn-gradient-warning {
+      background-color: #0b0b0b; /* fallback for old browsers */
+      color: #ffffff;
+    }
+    .landing-dark-color {
+      color: #000000 !important;
+    }
+    .landing-dark-bg {
+      background-color: #000000;
+    }
+    .scrolltop {
+      background-color: #172f4a;
+    }
+    .menu-state-title-primary
+      .menu-item
+      .menu-link:hover:not(.disabled):not(.active) {
+      transition: color 0.2s ease, background-color 0.2s ease;
+      color: #000000;
+      background-color: #f5f5f5;
+    }
+    .landing-header .menu .menu-link.active {
+      color: #ffffff;
+    }
+    .text-warning {
+      color: #f57e20 !important;
+    }
+    [data-kt-sticky-landing-header="on"] .landing-header {
+      padding: 0;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 100;
+      background-color: #000000;
+      box-shadow: 0px 10px 30px 0px rgba(82, 63, 105, 0.05);
+      height: 70px;
+    }
+    [data-kt-sticky-landing-header="on"]
+      .landing-header
+      .menu
+      .menu-link.active {
+      color: #000000;
+      background-color: #f3f3f3;
+    }
+
+    @media (min-width: 276px) {
+      .btn-download {
+        width: 100px;
+      }
+      .icon-bot {
+        display: none;
+      }
+      .icon-bot-mobile {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .btn-download {
+        width: 170px;
+      }
+      .icon-bot-mobile {
+        display: none;
+      }
+      .icon-bot {
+        display: block;
+      }
+    }
+
+    .gradient-card {
+      background-image: #000000;
+    }
+    .landing-dark-border-cs {
+      border: 1px dashed #282828;
+    }
+    .text-blue-cs {
+      color: #01085a !important;
+    }
+
+    .bg-blackcs {
+      background-color: #04050a !important;
+    }
+    .accordion-item,
+    .accordion-button {
+      background-color: #04050a !important;
+    }
+    .accordion-item {
+      border: 1px solid #151c2e;
+    }
+    .accordion-button:not(.collapsed) {
+      color: #fc7545;
+      box-shadow: inset 0 -1px 0 #151c2e;
+    }
+    .accordion-button,
+    .accordion-body {
+      color: #ffffff;
+    }
+
+    .text-desc{
+      color: #ffffff !important;
+    }
+  </style>
+  <!--begin::Body-->
+  <body
+    id="kt_body"
+    data-bs-spy="scroll"
+    data-bs-target="#kt_landing_menu"
+    data-bs-offset="200"
+    class="bg-blackcs position-relative"
+  >
+    <!--begin::Main-->
+    <div class="d-flex flex-column flex-root">
+      <!--begin::Header Section-->
+      <div class="mb-0" id="home">
+        <!--begin::Wrapper-->
+        <div
+          class="bgi-no-repeat bgi-size-cover bgi-position-x-center bgi-position-y-top"
+          style="background-image: url(assets/media/bg.jpg)"
+        >
+          <!--begin::Header-->
+          <div
+            class="landing-header"
+            data-kt-sticky="true"
+            data-kt-sticky-name="landing-header"
+            data-kt-sticky-offset="{default: '200px', lg: '300px'}"
+          >
+            <!--begin::Container-->
+            <div class="container">
+              <!--begin::Wrapper-->
+              <div class="d-flex align-items-center justify-content-between">
+                <!--begin::Logo-->
+                <div class="d-flex align-items-center flex-equal">
+                  <!--begin::Mobile menu toggle-->
+                  <button
+                    class="btn btn-icon btn-active-color-primary me-3 d-flex d-lg-none"
+                    id="kt_landing_menu_toggle"
+                  >
+                    <!--begin::Svg Icon | path: icons/duotune/abstract/abs015.svg-->
+                    <span class="svg-icon svg-icon-2hx">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M21 7H3C2.4 7 2 6.6 2 6V4C2 3.4 2.4 3 3 3H21C21.6 3 22 3.4 22 4V6C22 6.6 21.6 7 21 7Z"
+                          fill="black"
+                        />
+                        <path
+                          opacity="0.3"
+                          d="M21 14H3C2.4 14 2 13.6 2 13V11C2 10.4 2.4 10 3 10H21C21.6 10 22 10.4 22 11V13C22 13.6 21.6 14 21 14ZM22 20V18C22 17.4 21.6 17 21 17H3C2.4 17 2 17.4 2 18V20C2 20.6 2.4 21 3 21H21C21.6 21 22 20.6 22 20Z"
+                          fill="black"
+                        />
+                      </svg>
+                    </span>
+                    <!--end::Svg Icon-->
+                  </button>
+                  <!--end::Mobile menu toggle-->
+                  <!--begin::Logo image-->
+                  <a href="../../demo1/dist/landing.html">
+                    <img
+                      alt="Logo"
+                      src="assets/media/logoxtrade.png"
+                      class="logo-default h-25px h-lg-35px"
+                    />
+                    <img
+                      alt="Logo"
+                      src="assets/media/logoxtrade.png"
+                      class="logo-sticky h-20px h-lg-35px"
+                    />
+                  </a>
+                  <!--end::Logo image-->
+                </div>
+                <!--end::Logo-->
+                <!--begin::Menu wrapper-->
+                <div class="d-lg-block" id="kt_header_nav_wrapper">
+                  <div
+                    class="d-lg-block p-5 p-lg-0"
+                    data-kt-drawer="true"
+                    data-kt-drawer-name="landing-menu"
+                    data-kt-drawer-activate="{default: true, lg: false}"
+                    data-kt-drawer-overlay="true"
+                    data-kt-drawer-width="200px"
+                    data-kt-drawer-direction="start"
+                    data-kt-drawer-toggle="#kt_landing_menu_toggle"
+                    data-kt-swapper="true"
+                    data-kt-swapper-mode="prepend"
+                    data-kt-swapper-parent="{default: '#kt_body', lg: '#kt_header_nav_wrapper'}"
+                  >
+                    <!--begin::Menu-->
+                    <div
+                      class="menu menu-column flex-nowrap menu-rounded menu-lg-row menu-title-gray-500 menu-state-title-primary nav nav-flush fs-5 fw-bold"
+                      id="kt_landing_menu"
+                    >
+                    </div>
+                    <!--end::Menu-->
+                  </div>
+                </div>
+                <!--end::Menu wrapper-->
+                <!--begin::Toolbar-->
+                <!-- <div class="flex-equal text-end ms-1">
+                  <a
+                    href="https://owner.tradervibes.com/login"
+                    target="_blank"
+                    class="btn btn-gradient-warning"
+                    >Sign In</a
+                  >
+                </div> -->
+                <!--end::Toolbar-->
+              </div>
+              <!--end::Wrapper-->
+            </div>
+            <!--end::Container-->
+          </div>
+          <!--end::Header-->
+          <!--begin::Landing hero-->
+          <div
+            class="d-flex flex-column flex-center w-100 min-h-450px min-h-lg-600px px-9"
+          >
+            <!--begin::Heading-->
+            <div class="container">
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="mb-5 mb-lg-10 py-10 py-lg-20">
+                    <!--begin::Title-->
+                    <img
+                      class="icon-bot-mobile text-center"
+                      src="assets/media/icons.png"
+                      width="75%"
+                      alt=""
+                    />
+                    <h1
+                      class="text-white fs-2x fs-lg-4x mb-15"
+                      style="font-weight: 900"
+                    >
+                      Sukses berinvestasi, kapanpun dan di manapun bersama
+                      XTRADE <br />
+                    </h1>
+                    <!--end::Title-->
+                    <h2 class="text-white fw-light mb-15">
+                      Selamat datang di perusahaan investasi terbaik yang
+                      menawarkan solusi investasi terhebat. Fitur penarikan
+                      cepat, pertumbuhan optimal, transparansi maksimal dan
+                      fitur keamanan yang terjamin
+                    </h2>
+                    <!--begin::Action-->
+
+                    <div class="d-flex">
+                      <a href="#" target="_blank">
+                        <img
+                          class="btn-download"
+                          src="assets/media/playstore.png"
+                          alt=""
+                        />
+                      </a>
+                      <!-- <a href="#">
+                        <img
+                          class="btn-download"
+                          src="assets/media/matc/appstore.png"
+                          alt=""
+                        />
+                      </a> -->
+                    </div>
+
+                    <!--end::Action-->
+                  </div>
+                </div>
+                <div class="col-md-7 position-relative">
+                  <img
+                    class="position-absolute top-50 start-50 translate-middle icon-bot"
+                    src="assets/media/icons.png"
+                    width="100%"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end::Landing hero-->
+        </div>
+      </div>
+      <!--end::Header Section-->
+
+       <div class="container text-desc pt-20">
+         <div class="row">
+           <div class="col-12">
+            <h1 class="narasi-title text-white" style="font-size:14px;"><b>Terima Kasih Telah Menjadi Pengguna XTRADE
+            </b></h1>
+        <p>Kebijakan Privasi Akun Pengguna XTRADE Berlaku :
+          </p><ol>
+            <li>Pemberitahuan kepada Pengguna XTRADE;</li>
+            <li>Perolehan dan Pengumpulan Data Pribadi;</li>
+            <li>Penggunaan Data Pribadi;</li>
+            <li>Pengungkapan Data Pribadi;</li>
+            <li>Kegiatan Pemasaran Langsung;</li>
+            <li>Tindakan Keamanan dan Penyimpanan;</li>
+            <li>Layanan Pihak Ketiga dan Situs Web;</li>
+            <li>Perubahan atas Kebijakan Privasi Ini;</li>
+            <li>Berhenti Menerima Email;</li>
+            <li>Ketentuan Lain;</li>
+            <li>Pernyataan;</li>
+            <li>Menjaga Keamanan Data Anda;</li>
+            <li>Penyimpanan dan Penghapusan Data Anda;</li>
+            <li>Informasi Lebih Lanjut.</li>
+          </ol><br>
+
+          Di XTRADE, kami ingin memberikan pengalaman bagi Anda sebaik mungkin dalam menikmati
+          setiap layanan jasa elektronik Platform Digital yang kami berikan baik untuk saat ini maupun di
+          masa mendatang. Privasi dan kemanan Data Pribadi anda akan selalu menjadi hal yang sangat
+          penting bagi kami. Oleh karena itu, kami menguraikan secara transparan bagaiama cara kami
+          mengumpulkan, menyimpan, dan menggunakan Data Pribadi anda sebagaimana dijabarkan di bawah
+          ini.<br><br>
+
+          <b>1. Umum</b><br>
+          Kebijakan Privasi ini berlaku untuk layanan-layanan yang disediakan oleh PT. XTRADE (atau dikenal sebagai “XTRADE”, dengan jargon “ NYATA DAN BAIK” dan menjelaskan
+          bagaimana kami mengumpulkan, menggunakan, menyimpan, mentransfer, melindungi dan mengungkapkan
+          “data pribadi” Pengguna, “informasi yang dapat diidentifikasi secara pribadi” atau informasi
+          pribadi lainnya (secara kolektif, “Data Pribadi”) sehubungan dengan akses Pengguna ke dan
+          penggunaan dari aplikasi XTRADE.<br><br>
+
+          Sebagaimana dijelaskan dengan lebih lengkap dalam Syarat dan Ketentuan Untuk Pengguna XTRADE
+           (“Syarat dan Ketentuan”), Aplikasi XTRADE adalah sebuah aplikasi layanan gaya
+          hidup yang terintegrasi yang dirancang oleh PT. XTRADE untuk para pengguna.
+          Aplikasi XTRADE menyediakan pintu masuk bagi para Pengguna terdaftar untuk menggunakan
+          layanan sistem pembayaran berupa Produk elektronik, Platform Digital, dan transfer, serta dapat
+          berpartisipasi dalam berbagai kegiatan, termasuk berinteraksi dengan teman, mengakses informasi
+          atau promosi-promosi dan melakukan pembayaran.<br><br>
+
+          Aplikasi XTRADE disediakan gratis bagi Pengguna yang sudah terdaftar. Siapa pun dapat
+          mendaftar untuk memiliki akun pada Aplikasi XTRADE (“Akun XTRADE”) dengan PT. XTRADE yang merupakan lembaga bukan bank yang telah memperoleh izin sebagai penerbit
+          Produk elektronik, penyelenggara Platform Digital, dan penyelenggara transfer dana, yang berada
+          di bawah pengawasan Bank Indonesia selaku otoritas yang berwenang mengawasi penyelenggaraan
+          sistem pembayaran.<br><br>
+
+          Dari waktu ke waktu Pengguna harus memberikan pembaharuan Data Pribadi Pengguna kepada kami
+          sehubungan dengan akses dan penggunaan Aplikasi XTRADE oleh Pengguna. Dengan menyetujui
+          Kebijakan Privasi ini, Pengguna menyatakan telah memahami dan menyetujui ketentuan-ketentuan
+          dalam pemberitahuan ini sehubungan dengan pengumpulan, penggunaan, penyimpanan, pemberian dan
+          pengungkapan Data Pribadi Pengguna sebagaimana diatur dalam Kebijakan Privasi ini.<br><br>
+
+          Apabila Pengguna tidak memberikan Data Pribadi tersebut kepada kami maka hal tersebut dapat
+          menyebabkan kami tidak dapat menyediakan layanan-layanan Aplikasi XTRADE kepada Pengguna
+          atau untuk mematuhi suatu peraturan perundang-undangan atau pedoman-pedoman yang dikeluarkan
+          oleh instansi atau otoritas lainnya yang berwenang.<br><br>
+
+          Kata "termasuk" tidak bersifat membatasi.
+          Data Pribadi termasuk tetapi tidak terbatas pada nama, alamat, tempat lahir, tanggal lahir,
+          pekerjaan, nomor telepon, nomor faksimili, rekening bank, informasi kartu kredit dan/atau kartu
+          debit (termasuk direct debit), jenis kelamin, nomor identitas yang diterbitkan oleh instansi
+          atau otoritas yang berwenang (termasuk KTP, SIM, dan Paspor) atau tanda pengenal lainnya yang
+          dikeluarkan oleh pemerintah, foto, kewarganegaraan, nomor telepon pengguna dan non-pengguna
+          XTRADE yang terdapat dalam daftar kontak telepon seluler Pengguna XTRADE, serta
+          informasi biometrik (termasuk namun tidak terbatas pengenalan wajah), serta informasi lain yang
+          secara langsung maupun tidak langsung, baik secara terpisah atau bersama-sama dengan informasi
+          lain, dapat digunakan untuk mengidentifikasi Pengguna.<br><br>
+
+          Mohon dapat membaca Kebijakan Privasi ini dengan seksama untuk memastikan bahwa sebagai
+          Pengguna, Anda memahami dan menyetujui dengan baik cara kami memperoleh, memproses, menggunakan,
+          menyimpan, dan mengungkapkan Data Pribadi Pengguna.<br><br>
+
+          Kecuali didefinisikan lain dalam Kebijakan Privasi ini, istilah yang ditulis dengan huruf
+          kapital memiliki arti yang sama dengan yang diberikan dalam Syarat dan Ketentuan.<br><br>
+
+          <b>2. Perolehan dan Pengumpulan Data Pribadi</b><br>
+          XTRADE dapat memperoleh Data Pribadi Pengguna dari berbagai sumber (misalnya dari
+          Pengguna atau melalui pihak ketiga) pada setiap saat, termasuk namun tidak terbatas, pada saat
+          Pengguna mengakses Aplikasi XTRADE atau melakukan transaksi menggunakan Aplikasi XTRADE
+          , di antaranya data sehubungan dengan:<br>
+          <ol>
+            <li>Informasi yang didapatkan (secara langsung atau tidak langsung) pada saat Pengguna
+              mengakses Aplikasi XTRADE, sehubungan dengan informasi tentang komputer,
+              perangkat telepon, bagian dari perangkat keras lain, perangkat lunak, serta jaringan
+              telekomunikasi yang digunakan oleh Pengguna untuk mengakses dan menggunakan Aplikasi
+              XTRADE (termasuk alamat IP Pengguna, lokasi geografis, tipe dan versi
+              browser/platform, penyedia layanan internet, sistem operasi, sumber rujukan/laman
+              keluar, laman kunjungan/penggunaan, tampilan halaman dan istilah pencarian apapun yang
+              Pengguna gunakan) (“Informasi Perangkat”);</li>
+            <li>Informasi yang didapatkan (secara langsung atau tidak langsung) ketika Pengguna
+              mendaftar dengan rekening XTRADE untuk membuat Akun XTRADE termasuk nama,
+              tanggal lahir, alamat, nomor telepon, alamat surel Pengguna, foto, dan kartu identitas
+              (termasuk KTP, SIM, dan Paspor) (“Informasi Pendaftaran”);</li>
+            <li>Informasi yang didapatkan (secara langsung atau tidak langsung) selama Pengguna
+              menggunakan Aplikasi XTRADE, termasuk nomor rekening bank Pengguna, informasi
+              tagihan dan pengiriman, data transaksi, nomor kartu kredit dan/atau debit dan tanggal
+              kadaluwarsa kredit dan/atau debit, dan informasi lainnya dari cek atau wesel (“Infomasi
+              Rekening”);</li>
+            <li>Informasi yang didapatkan pada saat Pengguna melakukan pembaruan informasi atau pada
+              saat lainnya sebagaimana dapat diminta oleh XTRADE kepada Pengguna apabila
+              dibutuhkan dari waktu ke waktu;</li>
+            <li>Informasi Perangkat, Informasi Pendaftaran dan Informasi Rekening di atas dan informasi
+              lainnya dapat diakses atau dikumpulkan (secara otomatis atau manual) pada saat
+              pendaftaran Pengguna dengan rekening XTRADE sebagai pengguna Aplikasi XTRADE
+               dan/atau selama penggunaan Aplikasi XTRADE dan Akun XTRADE oleh
+              Pengguna. Informasi di atas yang kami dapatkan mungkin merupakan Data Pribadi Pengguna.
+              Kami telah mengambil langkah-langkah untuk memastikan bahwa kami tidak mengumpulkan
+              informasi (tanpa melihat apakah informasi tersebut merupakan Data Pribadi atau tidak)
+              dari Pengguna lebih dari apa yang kami perlukan untuk menyediakan layanan kami kepada
+              Pengguna, untuk melakukan fungsi-fungsi sebagaimana diatur dalam bagian 3 (tiga) dari
+              Kebijakan Privasi ini, untuk melindungi Akun XTRADE Pengguna, mematuhi kewajiban
+              hukum kami, melindungi hak-hak kami berdasarkan hukum, dan untuk mengoperasikan kegiatan
+              usaha kami.<br><br>
+              XTRADE dapat mengumpulkan Data Pribadi Pengguna dari pihak ketiga (termasuk gerai
+              dan UMKM, mitra, dan pihak lainnya yang memberikan layanan kepada XTRADE atau
+              mitra-mitra lainnya yang bekerjasama dengan XTRADE. Dalam hal tersebut, pihak
+              ketiga tersebut bertanggung jawab untuk memperoleh persetujuan dari pihak-pihak yang
+              berwenang yang diperlukan dalam pengumpulan dan pengungkapan Data Pribadi Pengguna
+              kepada XTRADE, dan XTRADE akan melakukan pengolahan Data Pribadi dengan
+              bergantung pada persetujuan yang telah diperoleh oleh pihak ketiga tersebut. Dalam hal
+              ini, XTRADE akan memanfaatkan Data Pribadi Pengguna untuk tujuan kerja sama
+              XTRADE dengan pihak ketiga tersebut.</li>
+          </ol><br>
+          <b>3. Penggunaan Data Pribadi</b><br>
+          Kami dapat mengolah, menganalisis, dan/atau menggunakan Data Pribadi yang kami dapatkan tentang
+          Pengguna untuk tujuan sebagai berikut maupun tujuan lain yang diizinkan oleh peraturan
+          perundang-undangan yang berlaku, di antaranya:<br>
+          <ol>
+            <li>Memverifikasi kelayakan dan/atau kesesuaian data Pengguna untuk menggunakan fitur-fitur
+              dan fungsi-fungsi dalam Aplikasi XTRADE ataupun verifikasi apapun yang menurut
+              pertimbangan XTRADE diperlukan sebelum memberikan layanan kepada Pengguna atau
+              sebelum XTRADE mendaftarkan Pengguna termasuk dan tidak terbatas pada proses
+              Mengenal Pengguna;</li>
+            <li>Mengidentifikasi dan memproses pendaftaran Akun XTRADE Pengguna, serta memelihara
+              dan mengelola pendaftaran Pengguna;</li>
+            <li>Memproses dan mengelola Saldo XTRADE Pengguna;</li>
+            <li>Menyediakan layanan untuk Pengguna dan layanan pelanggan yang berkaitan dengan
+              penggunaan Akun XTRADE Pengguna termasuk berkolaborasi dengan XTRADE untuk
+              memfasilitasi pembayaran atas pembelian barang dan jasa, pengiriman dan layanan terkait
+              lainnya untuk pembelian, pengenaan pembayaran kembali, mengirimkan pemberitahuan tentang
+              transaksi-transaksi dan tagihan-tagihan Pengguna dan menjawab pertanyaan, masukan,
+              keluhan, tuntutan atau perselisihan dari Pengguna;</li>
+            <li>Menyediakan layanan untuk Pengguna yang berkaitan dengan penggunaan Aplikasi XTRADE
+               oleh Pengguna yaitu untuk mempermudah Pengguna dalam mengidentifikasi Pengguna
+              Aplikasi XTRADE lainnya pada saat Pengguna melihat buku alamat telepon selular
+              Pengguna melalui Aplikasi;</li>
+            <li>Meningkatkan dan mengembangkan penawaran-penawaran kami melalui penelitian dan
+              pengembangan fungsi-fungsi baru dari Aplikasi XTRADE atau produk dan
+              layanan-layanan baru lainnya yang mungkin akan kami tawarkan dari waktu ke waktu;</li>
+            <li>Melakukan penelitian, analisis statistik atau survei, baik secara lisan maupun tulisan,
+              untuk mengelola dan melindungi bisnis kami termasuk infrastruktur teknologi informasi,
+              untuk mengukur kinerja Aplikasi XTRADE dan layanan-layanan lain yang kami
+              tawarkan serta untuk memastikan kepuasan anda atas layanan kami;</li>
+            <li>Melakukan analisis tren, penggunaan dan perilaku-perilaku lainnya (baik secara
+              individual atau secara keseluruhan) yang membantu kami untuk lebih memahami bagaimana
+              Pengguna dan kumpulan pengguna kami mengakses serta menggunakan Aplikasi XTRADE
+              dan kegiatan komersial yang dilakukan melalui Aplikasi XTRADE, termasuk untuk
+              tujuan peningkatkan layanan dan tanggapan terhadap pertanyaan serta preferensi pengguna;
+            </li>
+            <li>Mengacu kepada diperolehnya persetujuan Pengguna sesuai dengan hukum yang berlaku
+              sebagaimana dimaksud di bagian 4 di bawah ini maka kami dapat menggunakan Data Pribadi
+              untuk memberikan informasi pemasaran langsung kepada Pengguna sehubungan dengan layanan
+              yang kami tawarkan dan afiliasi kami dan pihak ketiga yang telah dipilih menggunakan
+              Data Pribadi Pengguna untuk menghubungi Pengguna, melalui telepon, pesan singkat (SMS),
+              surel (e-mail), pos dan faksimili;</li>
+            <li>Mengelola risiko, melakukan pengecekan atas kelayakan kredit dan kemampuan membayar
+              (solvensi), atau menilai, mendeteksi, menyelidiki, mencegah dan/atau memperbaiki
+              penipuan atau kegiatan-kegiatan yang berpotensi melanggar atau yang melanggar peraturan
+              perundang-undangan dan kepentingan XTRADE, ataupun untuk melindungi integritas
+              platform teknologi informasi kami;</li>
+            <li>Mendeteksi, menyelidiki, mencegah atau memperbaiki pelanggaran-pelanggaran atas Syarat
+              dan Ketentuan, Kebijakan Privasi, semua kebijakan internal XTRADE yang berlaku
+              dari waktu ke waktu, standar industri, pedoman, undang-undang atau peraturan yang
+              terkait;</li>
+            <li>Melakukan pengungkapan sebagaimana yang mungkin disyaratkan oleh undang-undang atau
+              peraturan dari suatu negara manapun yang berlaku terhadap kami atau afiliasi kami,
+              pejabat pemerintah atau pihak ketiga, termasuk asosiasi kartu atau jaringan pembayaran
+              lainnya serta asosiasi industri lain yang relevan. Pengungkapan juga dapat dilakukan
+              sehubungan dengan panggilan pengadilan, putusan dan/atau perintah pengadilan, perintah
+              aparat penegak hukum yang berwenang dalam rangka penyidikan, penyelidikan, atau proses
+              hukum lainnya atau suatu persyaratan di suatu negara manapun yang berlaku kepada kami
+              atau afiliasi kami (termasuk persyaratan pelaporan anti-pencucian uang dan
+              anti-pendanaan terorisme);</li>
+            <li>Melakukan suatu pengungkapan untuk mencegah terjadinya suatu bahaya atau kerugian
+              keuangan untuk melaporkan setiap dugaan kegiatan illegal atau untuk menghadapi setiap
+              gugatan atau potensi gugatan yang diajukan terhadap kami atau afiliasi kami;</li>
+            <li>Melakukan uji kelayakan dan penilaian lainnya atau evaluasi terhadap penggabungan,
+              pengambilalihan, pembiayaan transaksi atau usaha patungan yang aktual ataupun yang
+              diusulkan;</li>
+            <li>Memberitahu Pengguna mengenai segala pembaharuan pada Aplikasi XTRADE atau
+              perubahan pada layanan XTRADE;</li>
+            <li>Mengembangkan dan meningkatkan kualitas aplikasi untuk memenuhi kebutuhan dan preferensi
+              Pengguna XTRADE terhadap fitur-fitur yang dimiliki atau akan dikembangkan
+              kedepannya oleh XTRADE;</li>
+            <li>Memantau dan menganalisis aktivitas, perilaku, dan data demografis Pengguna XTRADE
+               termasuk kebiasaan dan penggunaan berbagai layanan yang tersedia di Aplikasi
+              XTRADE;</li>
+            <li>Menawarkan atau menyediakan layanan dari mitra-mitra ataupun afiliasi yang bekerja sama
+              dengan XTRADE kepada Pengguna.</li>
+            <li>Mengirimkan informasi, iklan, survei, promo, voucher, dan informasi-informasi lainnya
+              yang dinilai relevan oleh XTRADE kepada Pengguna;</li>
+            <li>Memberikan bantuan teknis atau dalam rangka menyelesaikan hambatan teknis dan masalah
+              operasional yang terjadi pada aplikasi XTRADE;</li>
+            <li>Memfasilitasi transaksi aset bisnis (yang dapat berupa penggabungan, akuisisi,
+              spinoff/pemisahan atau penjualan asset) yang melibatkan XTRADE dan/atau afiliasi
+              XTRADE;</li>
+            <li>Untuk tujuan bisnis lain yang sah seperti melindungi Pengguna dan pengguna Aplikasi
+              XTRADE lainnya dari kerugian, melindungi nyawa, menjaga keamanan produk dan
+              sistem kami dan melindungi kepentingan, hak, dan/atau properti kami lainnya.</li>
+          </ol><br>
+          Kami juga dapat menggunakan Data Pribadi Pengguna dengan cara lain, yang akan kami sertai dengan
+          pemberitahuan khusus pada saat pengumpulan data tersebut untuk disetujui oleh Pengguna.<br><br>
+
+          <b>4. Pengungkapan Data Pribadi</b><br>
+          4.1 Data Pribadi Pengguna yang kami simpan akan dijaga kerahasiaannya, namun kami dapat
+          memberikan Data Pribadi Pengguna kepada pihak-pihak berikut (baik di dalam maupun di luar negara
+          tempat tinggal Pengguna) untuk tujuan-tujuan sebagaimana diatur dalam ketentuan Bagian 3 di
+          atas:<br>
+          <ol>
+            <li>Perusahaan anggota XTRADE dan perusahaan yang memiliki hubungan afiliasi dengan
+              anggota XTRADE;</li>
+            <li>Gerai, UMKM dan mitra lainnya serta penyedia layanan pihak ketiga yang bekerja sama
+              dengan XTRADE dalam menyediakan layanan kami untuk Pengguna termasuk untuk
+              mencegah penipuan, pengumpulan tagihan, memasukkan data, manajemen database, promosi,
+              pemasaran, riset, survey, pelayanan pelanggan, layanan teknologi, pemberitahuan produk
+              dan layanan serta layanan perpanjangan pembayaran;</li>
+            <li>Entitas-entitas dengan siapa kami memiliki hubungan referensi bisnis atau
+              perjanjian-perjanjian komersial lainnya termasuk pihak ketiga dan entitas-entitas yang
+              sepenuhnya atau sebagian dimiliki oleh PT. XTRADE;</li>
+            <li>Gerai, UMKM dan organisasi lain, seperti asosiasi kartu, jaringan pembayaran atau
+              institusi keuangan, kepada atau melalui siapa pembayaran-pembayaran tersebut dilakukan
+              dengan menggunakan XTRADE, atau entitas-entitas lainnya yang memungkinkan
+              penggunaan Aplikasi XTRADE;</li>
+            <li>Institusi keuangan pihak ketiga, bank, mitra, lembaga pembiayaan, dan agen kredit;</li>
+            <li>Pihak ketiga penyedia jasa;</li>
+            <li>Penasihat profesional, lembaga penegak hukum, perusahaan asuransi, pemerintah dan pihak
+              berwenang atau instansi lainnya dimana PT. XTRADE berkewajiban untuk
+              melakukan pengungkapan sesuai kebutuhan, permintaan yang sah, dan hukum yang berlaku,
+              peraturan atau pengaturan komersial, termasuk pengaturan dengan asosiasi kartu atau
+              jaringan pembayaran ataupun asosiasi industri lain yang relevan;</li>
+            <li>Entitas-entitas yang terlibat dalam penggabungan, pengambil alihan, transaksi pembiayaan
+              atau usaha patungan dengan kami.</li>
+          </ol><br>
+          4.2 XTRADE juga dapat mengungkapkan dan membagikan Data Pribadi Pengguna dengan
+          pihak-pihak yang disebutkan di atas untuk tujuan sebagai berikut ini:<br>
+          <ol>
+            <li>Untuk meningkatkan kualitas layanan yang diberikan XTRADE kepada Pengguna dari
+              waktu ke waktu;</li>
+            <li>Jika disyaratkan atau diperbolehkan oleh peraturan perundang-undangan yang berlaku atau
+              atas perintah dan/atau permintaan resmi dari otoritas, lembaga, institusi negara,
+              dan/atau aparat penegak hukum;</li>
+            <li>Untuk keperluan proses hukum dalam bentuk apapun antara Pengguna dengan XTRADE;
+            </li>
+            <li>Untuk tujuan audit, baik rutin maupun insidentil, sebagaimana diperlukan dari waktu ke
+              waktu;</li>
+            <li>Untuk keperluan pemrosesan izin, pendaftaran, ataupun pencatatan yang diperlukan untuk
+              kegiatan usaha XTRADE;</li>
+            <li>Untuk segala proses verifikasi yang diperlukan sebelum mendaftarkan Pengguna sebagai
+              Pengguna, termasuk proses Mengenal Pengguna.</li>
+          </ol><br>
+          4.3 XTRADE akan menjaga perlindungan Data Pribadi Pengguna kepada pihak lain.<br><br>
+          4.4 Selain sebagaimana yang diatur di atas, XTRADE dapat mengungkapkan dan membagikan
+          Data Pribadi Pengguna untuk tujuan maupun kepada pihak lain sesuai dengan peraturan
+          perundang-undangan.<br><br>
+          <b>5. Kegiatan Pemasaran Langsung</b><br>
+          Sebagaimana telah ditentukan pada Bagian 3 butir 9 di atas, XTRADE dapat menggunakan Data
+          Pribadi Pengguna dalam kegiatan pemasaran langsung (Direct Marketing) sewaktu-waktu. Dalam hal
+          demikian, Pengguna akan diminta untuk memberikan persetujuan terhadap aktivitas pemasaran
+          langsung yang akan dilakukan oleh XTRADE sesuai dengan ruang lingkup dan cara yang
+          sepenuhnya sesuai dan mematuhi semua persyaratan yang ditetapkan dalam Bagian ini. Jika Pengguna
+          kemudian memberikan persetujuan tersebut, harap perhatikan bahwa:
+          <ol>
+            <li>Data Pribadi tertentu yang kami peroleh dari waktu ke waktu dapat digunakan dalam
+              kegiatan pemasaran langsung dan promosi;</li>
+            <li>Kami dapat memasarkan barang dan layanan yang kami yakini relevan untuk Pengguna, yang
+              mana persetujuan lanjutan dari Pengguna secara spesifik akan didapatkan. Hal ini
+              termasuk barang dan layanan yang ditawarkan oleh kami, afiliasi kami manapun, rekanan
+              bisnis kami atau pihak ketiga yang telah dipilih, termasuk namun tidak terbatas pada
+              produk pembayaran dan keuangan;</li>
+            <li>Kami dapat memberikan Data Pribadi Pengguna kepada pihak ketiga tertentu untuk digunakan
+              dalam memasarkan barang dan layanan mereka, termasuk (i) afiliasi kami, (ii) rekanan
+              bisnis, dan (iii) pihak ketiga lainnya;</li>
+            <li>Persetujuan Pengguna atas penggunaan Data Pribadi Pengguna untuk tujuan pemasaran
+              langsung akan didapatkan dengan cara memilih untuk memberikan tanda centang pada kotak
+              atau indikasi positif lainnya yang menunjukkan persetujuan dan/atau tidak adanya
+              keberatan;</li>
+            <li>Setiap saat Pengguna tidak ingin melanjutkan, menggunakan atau memberikan Data Pribadi
+              Pengguna kepada pihak lain untuk digunakan dalam pemasaran langsung sebagaimana
+              dijelaskan di atas dan dalam persetujuan yang terkait maka Pengguna dapat menggunakan
+              hak “opt-out” dengan memberitahukan maksud tersebut kepada kami melalui saluran
+              komunikasi yang kami sediakan.</li>
+          </ol><br>
+          <b>6. Tindakan Keamanan dan Penyimpanan</b><br>
+          Kami mengambil semua langkah yang wajar dan semaksimal mungkin termasuk memberikan perlindungan
+          teknis, administrasi dan fisik untuk membantu melindungi Data Pribadi Pengguna yang kami proses
+          dari suatu resiko kehilangan, penyalahgunaan dan akses tanpa izin, pengungkapan, perubahan dan
+          penghancuran yang tidak diinginkan.<br><br>
+          Kami akan menyimpan dan memastikan penyedia layanan kami untuk menyimpan Data Pribadi Pengguna
+          hanya selama dibutuhkan untuk tujuan-tujuan yang sudah ditetapkan dalam pemberitahuan ini dan
+          sesuai dengan persyaratan dalam peraturan perundang-undangan yang berlaku.<br><br>
+          Data Pribadi Pengguna hanya akan disimpan selama diperlukan untuk memenuhi tujuan dari
+          pengumpulannya atau selama penyimpanan tersebut diwajibkan atau diperbolehkan oleh peraturan
+          perundang-undangan yang berlaku.<br><br>
+          Bagi Pengguna yang terdaftar pada XTRADE maka informasi pendaftaran dan informasi Akun
+          Pengguna (jika ada) dapat dilihat dan diubah dalam Aplikasi XTRADE melalui Akun Pengguna,
+          yang dilindungi oleh kata sandi, kode PIN, atau metode pengamanan lainnya. Kami mengingatkan
+          kembali kepada Pengguna untuk tidak mengungkapkan kata sandi atau kode PIN atau kunci pengamanan
+          lain milik Pengguna kepada pihak manapun. Karyawan, petugas, mitra, dan perwakilan kami tidak
+          mengetahui dan tidak akan pernah meminta kata sandi Pengguna dalam komunikasi melalui telepon
+          yang tidak diminta atau melalui media email yang tidak diminta. Jika Pengguna menggunakan
+          perangkat yang dapat digunakan oleh orang lain (perangkat publik), maka Pengguna harus memilih
+          untuk tidak menyimpan informasi log-in Pengguna (misalnya: ID pengguna dan kata sandi) pada
+          perangkat tersebut. Anda bertanggung jawab untuk menjaga kerahasiaan detail akun anda, termasuk
+          kata sandi, kode PIN, dan One Time Password (OTP) dari siapapun dan bertanggung jawab atas
+          keamanan perangkat yang Anda gunakan.<br><br>
+          <b>7. Layanan Pihak Ketiga dan Situs Web</b><br>
+          Aplikasi XTRADE mungkin menyediakan tautan ke situs web dan layanan lain (termasuk
+          aplikasi yang dioperasikan oleh pihak ketiga) untuk kemudahan dan informasi Pengguna. Layanan
+          dan situs web ini dapat beroperasi secara independen dari kami dan mungkin memiliki
+          pemberitahuan atau kebijakan privasinya sendiri, kami sarankan Pengguna untuk membaca terlebih
+          dahulu sebelum menggunakan layanan mereka atau melakukan kegiatan apa pun di situs web tersebut.
+          Penyediaan tautan ke situs web dan layanan lain sifatnya hanya merupakan informasi saja. Kami
+          tidak memberikan dukungan atau jaminan apapun terhadap konten dan informasi yang dimuat dalam
+          tautan tersebut. Terhadap situs web yang Pengguna kunjungi yang tidak dimiliki atau dikendalikan
+          oleh kami, kami tidak bertanggung jawab atas isi, praktik privasi, dan kualitas layanan
+          tersebut.<br><br>
+          <b>8. Perubahan atas Kebijakan Privasi ini</b><br>
+          XTRADE memegang hak eksklusif untuk mengubah, menambah, dan/atau merevisi pemberitahuan
+          dan informasi terkait Kebijakan Privasi ini dari waktu ke waktu, dalam hal mana Pengguna akan
+          diminta untuk memberikan persetujuan terhadap Kebijakan Privasi yang telah diubah, ditambah,
+          dan/atau direvisi. Apabila Pengguna tidak memberikan persetujuan terhadap Kebijakan Privasi yang
+          telah diubah, ditambah, dan/atau direvisi tersebut, maka XTRADE memiliki kewenangan penuh
+          untuk menghentikan penyediaan layanan-layanan dalam Aplikasi XTRADE kepada
+          Pengguna.<br><br>
+          Anda setuju bahwa anda bertanggung jawab untuk meninjau Kebijakan Privasi ini secara berkala
+          untuk mendapatkan informasi terbaru mengenai pengolahan data dan praktik perlindungan
+          data.<br><br>
+          <b>9. Berhenti Menerima E-mail</b><br>
+          Kami memiliki kebijakan untuk memilih masuk atau keluar dari basis data. Jika Pengguna ingin
+          berhenti menerima email dari kami, dapat mengklik tautan berhenti berlangganan yang disertakan
+          dalam setiap email.<br><br>
+          Namun demikian, dari waktu ke waktu kami dapat mengirimkan e-mail, SMS, atau komunikasi lainnya
+          yang kami anggap perlu untuk tujuan penyediaan layanan, dan bukan merupakan promosi. Anda tidak
+          dapat memilih untuk tidak menerima e-mail, SMS, atau komunikasi lain tersebut.<br><br>
+          <b>10. Ketentuan Lain</b><br>
+          <ol>
+            <li>Peraturan Data Pribadi ini tunduk, diatur, dan dilaksanakan sesuai dengan hukum Republik
+              Indonesia;</li>
+            <li>Jika terjadi perselisihan dalam interpretasi dan implementasi Peraturan Data Pribadi
+              ini, Pengguna dan PT. XTRADE setuju untuk menyelesaikannya dengan
+              musyawarah. Jika dalam jangka waktu 30 (tiga puluh) hari kalender Pengguna dan PT. XTRADE tidak dapat mencapai suatu kesepakatan melalui musyawarah tersebut,
+              maka perselisihan tersebut akan diselesaikan dengan merujuk pada Pengadilan Negeri
+              Makassar;</li>
+            <li>Peraturan Data Pribadi ini dibuat dalam Bahasa Indonesia dan Bahasa Inggris. Dalam hal
+              terjadi inkonsistensi dan/atau pertentangan antara versi bahasa Inggris dan versi bahasa
+              Indonesia, maka versi Bahasa Indonesia yang akan berlaku dan versi Bahasa Inggris akan
+              dianggap menyesuaikan dengan versi Bahasa Indonesia;</li>
+            <li>Kami akan menerapkan sistem pengamanan informasi yang kami anggap memadai dan sesuai
+              dengan standar industri atau peraturan perundang-undangan. Namun, transmisi informasi
+              melalui saluran komunikasi tidak sepenuhnya aman dan bebas dari celah. Dengan demikian,
+              setiap transmisi informasi oleh Pengguna kepada kami memiliki risiko keamanan, dalam hal
+              mana risiko tersebut ditanggung oleh Pengguna. Kami tidak menjamin keamanan database
+              kami dan kami juga tidak menjamin bahwa data yang Pengguna berikan sepenuhnya tidak akan
+              tertahan/terganggu saat sedang dikirim kepada kami.</li>
+          </ol><br>
+          <b>11. Pernyataan</b><br>
+          Dengan menggunakan Aplikasi XTRADE, Pengguna mengakui bahwa Pengguna telah membaca dan
+          memahami Peraturan Data Pribadi ini dan menyetujui pengumpulan, penggunaan, pengolahan,
+          penyimpanan, pengungkapan, dan penghapusan Data Pribadi sebagaimana diatur dalam Kebijakan
+          Privasi ini.<br><br>
+          <b>12. Menjaga Keamanan Data Anda</b><br>
+          XTRADE berupaya untuk melindungi Data Pribadi anda sebagai Pengguna kami dimana kami
+          berusaha mengimplementasikan langkah teknis sebaik mungkin, sesuai dengan standar industri atau
+          peraturan perundang-undangan, untuk melindungi keamanan Data Pribadi Anda.<br><br>
+          Namun, sebagai Pengguna, anda harus memahami bahwa tidak ada sistem yang sepenuhnya aman. Oleh
+          karena itu, sebagai Pengguna, anda wajib menerapkan langkah-langkah untuk melindungi Akun XTRADE
+           Pengguna dengan menjaga penguasaaan Nomor Ponsel dan Perangkat yang digunakan untuk
+          mengakses Aplikasi XTRADE, serta menggunakan dan merahasiakan kata sandi dan/atau kode
+          PIN yang kuat dan unik untuk mencegah akses yang tidak diinginkan.<br><br>
+          <b>13. Penyimpanan, Akses, Koreksi, Pembaharuan, dan Penghapusan Data Anda</b><br>
+          13.1 XTRADE menyimpan Data Pribadi anda sebagai Pengguna selama diperlukan untuk
+          menyediakan layanan XTRADE dan untuk tujuan bisnis yang sah dan penting, diantaranya:<br>
+          <ol>
+            <li>Dalam rangka mempertahankan kinerja dan kualitas layanan pada fitur-fitur XTRADE;
+            </li>
+            <li>Dalam rangka membuat keputusan bisnis berdasarkan data yang anda berikan untuk
+              pengembangan produk-produk dan kualitas pelayanan kami;</li>
+            <li>Dalam rangka menyelesaikan masalah yang belum terselesaikan terkait akun anda, seperti
+              chargeback, refund, ataupun sengketa lain, dimana kami akan menyimpan Data Pribadi anda
+              sampai masalah tersebut terselesaikan;</li>
+            <li>Dalam rangka memenuhi kewajiban hukum, pajak, audit, dan akuntansi kami, kami akan
+              menyimpan Data Pribadi yang diperlukan selama periode yang disyaratkan berdasarkan hukum
+              yang berlaku; dan;</li>
+            <li>Atau untuk tujuan lain seperti yang telah disebutkan diatas selama diperlukan untuk
+              kepentingan bisnis kami yang sah, seperti untuk mencegah penipuan atau menjaga keamanan
+              anda sebagai Pengguna XTRADE;</li>
+          </ol><br>
+          13.2 Anda memiliki hak untuk meminta akses terhadap historis Data Pribadi yang pernah diserahkan
+          kepada kami. Dalam hal demikian, kami akan menyediakan informasi tersebut dengan format yang
+          kami tentukan, dengan memperhatikan kompabilitas dan praktik yang wajar. Anda dapat menyampaikan
+          permintaan akses tersebut melalui Help Center yang tersedia di aplikasi XTRADE, atau
+          informasi kontak yang disediakan pada Bagian 14.<br><br>
+          13.3 Anda memiliki hak melakukan koreksi atau memperbarui Data Pribadi yang pernah diserahkan
+          kepada kami. Anda dapat melakukan koreksi atau pembaharuan tersebut melalui Aplikasi XTRADE
+           atau melalui Help Center yang tercantum di aplikasi XTRADE atau informasi kontak
+          yang disediakan pada Bagian 14.<br><br>
+          13.4 Anda memiliki hak untuk meminta penghapusan terhadap Data Pribadi yang pernah diserahkan
+          kepada kami yang sudah tidak relevan, sesuai dengan ketentuan peraturan perundang-undangan.
+          Anda dapat menyampaikan permintaan penghapusan tersebut melalui Help Center yang tercantum di
+          aplikasi XTRADE atau informasi kontak yang disediakan pada Bagian 14.<br><br>
+          <b>14. Informasi Lebih Lanjut</b><br>
+          Apabila Pengguna hendak mengajukan pertanyaan atau menyampaikan keluhan, silahkan menghubungi
+          Layanan Pelanggan (Customer Service) XTRADE dibawah ini:<br><br>
+          <b><br><br>
+          Dengan menyetujui Kebijakan Privasi ini, Anda mengakui bahwa Anda telah membaca dan memahami
+          Kebijakan Privasi ini dan menyetujui segala ketentuan yang tercantum didalamnya. Anda juga telah
+          memberikan persetujuan kepada XTRADE untuk mengumpulkan, menggunakan, membagikan,
+          mengungkapkan, menyimpan, mentransfer, atau mengolah Data Pribadi Anda sesuai dengan Kebijakan
+          Privasi ini.
+        <p></p><br>
+      
+           </div>
+         </div>
+       </div>
+
+      <!--begin::Footer Section-->
+      <div class="mb-0">
+        <!--begin::Curve top-->
+        <div class="landing-curve landing-dark-color">
+          <svg
+            viewBox="15 -1 1470 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 48C4.93573 47.6644 8.85984 47.3311 12.7725 47H1489.16C1493.1 47.3311 1497.04 47.6644 1501 48V47H1489.16C914.668 -1.34764 587.282 -1.61174 12.7725 47H1V48Z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </div>
+        <!--end::Curve top-->
+        <!--begin::Wrapper-->
+        <div class="landing-dark-bg pt-20">
+          <!--begin::Container-->
+          <div class="container">
+            <!--begin::Row-->
+            <div class="row py-10 py-lg-20">
+              <!--begin::Col-->
+              <div class="col-lg-6 pe-lg-16 mb-10 mb-lg-0">
+                <!--begin::Block-->
+                <div class="rounded landing-dark-border p-9 mb-10">
+                  <h2 class="text-white">Masukan Dana & Penarikan Dana</h2>
+                  <p class="text-white">
+                    Anda bisa memilih beberapa metode pembayaran untuk penarikan
+                    dan deposit dana anda secara cepat dan mudah.
+                  </p>
+                  <!--end::Title-->
+                  <!--begin::Text-->
+                  <span class="badge bg-light mb-1">
+                    <img
+                      src="assets/media/vibes/bri.png"
+                      height="15px"
+                      alt=""
+                    />
+                  </span>
+                  <span class="badge bg-light mb-1">
+                    <img
+                      src="assets/media/vibes/bni.png"
+                      height="15px"
+                      alt=""
+                    />
+                  </span>
+                  <span class="badge bg-light mb-1">
+                    <img
+                      src="assets/media/vibes/bca-syariah.png"
+                      height="15px"
+                      alt=""
+                    />
+                  </span>
+                  <span class="badge bg-light mb-1">
+                    <img
+                      src="assets/media/vibes/bca.png"
+                      height="15px"
+                      alt=""
+                    />
+                  </span>
+                  <span class="badge bg-light mb-1">
+                    <img
+                      src="assets/media/vibes/cimb.png"
+                      height="15px"
+                      alt=""
+                    />
+                  </span>
+                  <span class="badge bg-light mb-1">
+                    <img
+                      src="assets/media/vibes/mandiri.png"
+                      height="15px"
+                      alt=""
+                    />
+                  </span>
+                  <span class="badge bg-light mb-1">
+                    <img
+                      src="assets/media/vibes/bsi.png"
+                      height="15px"
+                      alt=""
+                    />
+                  </span>
+                  <span class="badge bg-light mb-1">
+                    <img
+                      src="assets/media/vibes/btn.png"
+                      height="15px"
+                      alt=""
+                    />
+                  </span>
+                  <span class="badge bg-light mb-1">
+                    <img
+                      src="assets/media/vibes/dbs.png"
+                      height="15px"
+                      alt=""
+                    />
+                  </span>
+                  <span class="badge bg-light mb-1">
+                    <img
+                      src="assets/media/vibes/hsbc.png"
+                      height="15px"
+                      alt=""
+                    />
+                  </span>
+                  <span class="badge bg-light mb-1">
+                    <img
+                      src="assets/media/vibes/citibank.png"
+                      height="15px"
+                      alt=""
+                    />
+                  </span>
+
+                  <!--end::Text-->
+                </div>
+                <!--end::Block-->
+              </div>
+              <!--end::Col-->
+              <!--begin::Col-->
+              <div class="col-lg-6 ps-lg-16">
+                <!--begin::Navs-->
+                <div class="d-flex justify-content-center">
+                  <!--begin::Links-->
+                  <div class="d-flex fw-bold flex-column me-20">
+                    <!--begin::Subtitle-->
+                    <h4 class="fw-bolder text-gray-400 mb-6">
+                      Informasi lainnya
+                    </h4>
+                    <!--end::Subtitle-->
+                    <!--begin::Link-->
+                    <a
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#garansi"
+                      class="text-white opacity-50 text-hover-primary fs-5 mb-6"
+                      >Garansi</a
+                    >
+                    <!--end::Link-->
+                    <!--begin::Link-->
+                    <a
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#syarat"
+                      class="text-white opacity-50 text-hover-primary fs-5 mb-6"
+                      >Syarat &amp; Ketentuan</a
+                    >
+                    <!--end::Link-->
+                    <!--begin::Link-->
+                    <a
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#kebijakan"
+                      class="text-white opacity-50 text-hover-primary fs-5 mb-6"
+                      >Kabijakan Privasi</a
+                    >
+                    <!--end::Link-->
+                    <!--begin::Link-->
+                    <a
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#resiko"
+                      class="text-white opacity-50 text-hover-primary fs-5 mb-6"
+                      >Peringatan Resiko</a
+                    >
+                    <!--end::Link-->
+                  </div>
+                  <!--end::Links-->
+                  <!--begin::Links-->
+                  <div class="d-flex fw-bold flex-column ms-lg-20">
+                    <!--begin::Subtitle-->
+                    <h4 class="fw-bolder text-gray-400 mb-6">Ikuti Kami</h4>
+                    <!--end::Subtitle-->
+                    <!--begin::Link-->
+                    <a
+                      href="https://www.facebook.com/lasmartbot"
+                      target="_blank"
+                      class="mb-6"
+                    >
+                      <img
+                        src="assets/media/umum/facebook-4.svg"
+                        class="h-20px me-2"
+                        alt=""
+                      />
+                      <span
+                        class="text-white opacity-50 text-hover-primary fs-5 mb-6"
+                        >Facebook</span
+                      >
+                    </a>
+                    <!--end::Link-->
+                    <!--begin::Link-->
+                    <a
+                      href="https://twitter.com/LaSmartBot"
+                      target="_blank"
+                      class="mb-6"
+                    >
+                      <img
+                        src="assets/media/umum/twitter.svg"
+                        class="h-20px me-2"
+                        alt=""
+                      />
+                      <span
+                        class="text-white opacity-50 text-hover-primary fs-5 mb-6"
+                        >Twitter</span
+                      >
+                    </a>
+                    <!--end::Link-->
+                    <!--begin::Link-->
+                    <a
+                      href="https://www.instagram.com/lasmartbot/"
+                      target="_blank"
+                      class="mb-6"
+                    >
+                      <img
+                        src="assets/media/umum/instagram-2-1.svg"
+                        class="h-20px me-2"
+                        alt=""
+                      />
+                      <span
+                        class="text-white opacity-50 text-hover-primary fs-5 mb-6"
+                        >Instagram</span
+                      >
+                    </a>
+
+                    <!--end::Link-->
+                  </div>
+                  <!--end::Links-->
+                </div>
+                <!--end::Navs-->
+              </div>
+              <!--end::Col-->
+            </div>
+            <!--end::Row-->
+          </div>
+          <!--end::Container-->
+          <!--begin::Separator-->
+          <div class="landing-dark-separator"></div>
+          <!--end::Separator-->
+          <!--begin::Container-->
+          <div class="container">
+            <!--begin::Wrapper-->
+            <div
+              class="d-flex flex-column flex-md-row flex-stack py-7 py-lg-10"
+            >
+              <!--begin::Copyright-->
+              <div class="d-flex align-items-center order-2 order-md-1">
+                <!--begin::Logo-->
+                <a href="#">
+                  <img
+                    alt="Logo"
+                    src="assets/media/logoxtrade.png"
+                    class="h-15px h-md-20px"
+                  />
+                </a>
+                <!--end::Logo image-->
+                <!--begin::Logo image-->
+                <span
+                  class="mx-5 fs-6 fw-bold text-gray-600 pt-1"
+                  href="https://keenthemes.com"
+                  >© 2022</span
+                >
+                <!--end::Logo image-->
+              </div>
+              <!--end::Copyright-->
+              <!--begin::Menu-->
+              <!-- <ul
+                class="
+                  menu menu-gray-600 menu-hover-primary
+                  fw-bold
+                  fs-6 fs-md-5
+                  order-1
+                  mb-5 mb-md-0
+                "
+              >
+                <li class="menu-item">
+                  <a
+                    href="https://keenthemes.com"
+                    target="_blank"
+                    class="menu-link px-2"
+                    >About</a
+                  >
+                </li>
+                <li class="menu-item mx-5">
+                  <a
+                    href="https://keenthemes.com/support"
+                    target="_blank"
+                    class="menu-link px-2"
+                    >Support</a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a href="" target="_blank" class="menu-link px-2">Purchase</a>
+                </li>
+              </ul> -->
+              <!--end::Menu-->
+            </div>
+            <!--end::Wrapper-->
+          </div>
+          <!--end::Container-->
+        </div>
+        <!--end::Wrapper-->
+      </div>
+ 
+
+      <!--begin::Scrolltop-->
+      <!-- https://api.whatsapp.com/send?phone=#&amp;text=hallo? -->
+      <div
+        style="position: fixed; bottom: 50%; top: 50%; right: 0px; z-index: 100"
+      >
+        <a
+          href=""
+          target="_blank"
+          class="btn btn-success rounded-0 btn-md mr-3"
+        >
+          <img src="assets/media/umum/whatsapp.png" width="30px" alt="" />
+        </a>
+      </div>
+      <div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
+        <!--begin::Svg Icon | path: icons/duotune/arrows/arr066.svg-->
+        <span class="svg-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <rect
+              opacity="0.5"
+              x="13"
+              y="6"
+              width="13"
+              height="2"
+              rx="1"
+              transform="rotate(90 13 6)"
+              fill="black"
+            />
+            <path
+              d="M12.5657 8.56569L16.75 12.75C17.1642 13.1642 17.8358 13.1642 18.25 12.75C18.6642 12.3358 18.6642 11.6642 18.25 11.25L12.7071 5.70711C12.3166 5.31658 11.6834 5.31658 11.2929 5.70711L5.75 11.25C5.33579 11.6642 5.33579 12.3358 5.75 12.75C6.16421 13.1642 6.83579 13.1642 7.25 12.75L11.4343 8.56569C11.7467 8.25327 12.2533 8.25327 12.5657 8.56569Z"
+              fill="black"
+            />
+          </svg>
+        </span>
+        <!--end::Svg Icon-->
+      </div>
+      <!--end::Scrolltop-->
+    </div>
+    <!--end::Main-->
+    <!--begin::Javascript-->
+    <!--begin::Global Javascript Bundle(used by all pages)-->
+    <script src="assets/plugins/global/landingplugins.bundle.js"></script>
+    <script src="assets/js/landingscripts.bundle.js"></script>
+    <!--end::Global Javascript Bundle-->
+    <!--begin::Page Vendors Javascript(used by this page)-->
+    <script src="assets/plugins/custom/fslightbox/fslightbox.bundle.js"></script>
+    <script src="assets/plugins/custom/typedjs/typedjs.bundle.js"></script>
+    <!--end::Page Vendors Javascript-->
+    <!--begin::Page Custom Javascript(used by this page)-->
+    <script src="assets/js/custom/landing.js"></script>
+    <script src="assets/js/custom/pages/company/pricing.js"></script>
+    <!--end::Page Custom Javascript-->
+    <!--end::Javascript-->
+  </body>
+  <!--end::Body-->
+</html>
